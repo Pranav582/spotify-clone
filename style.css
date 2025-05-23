@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(58, 60, 61);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+  background-color: rgb(5, 5, 5);
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 65px;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.brand img {
+  width: 65px;
+  padding: 0 8px;
+}
+
+
+
+.container {
+    min-height: 70vh;
+    padding: 20px;
+    color: rgb(234, 195, 195);
+    font-family: 'Varela Round', sans-serif;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 15px;
+    
+    background-image: url('the-weeknd.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.bottom {
+  position: sticky;
+  bottom: 0;
+  height: 80px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 12px 0;
+}
+
+#myProgressBar {
+  width: 30vw;
+  cursor: pointer;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.icons i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.songList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.songItem {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  width: 80%;
+}
+
+.songItem img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.songListplay {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+} 
